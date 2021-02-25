@@ -33,7 +33,7 @@ class Auction(models.Model):
 
 class Person(models.Model):
     person = models.CharField(max_length=60)
-    category = models.ManyToManyField('Category', blank=True, null=True)
+    category = models.ManyToManyField('Category', blank=True)
 
     def __str__(self):
         return self.person
